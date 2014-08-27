@@ -28,6 +28,7 @@
     "glob": "^3.2.9",
     "originate": "0.1.5",
     "broccoli-static-compiler": "~0.1.4",
-    "broccoli-merge-trees": "~0.1.4"
+    "broccoli-merge-trees": "~0.1.4",
+    "broccoli-stylus-single": "~0.1.2"
   }
 }

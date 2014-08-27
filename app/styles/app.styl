@@ -1,0 +1,33 @@
+//- -------------------------------------------------------
+//- -------------------------------------------------------
+//- Find syntax help @ http://learnboost.github.io/stylus/
+//- Keep in mind that spaces vs tabs matter
+//- -------------------------------------------------------
+//- -------------------------------------------------------
+
+/* 
+* adding nib as a compass alternative with stylus https://github.com/stefanpenner/ember-cli/issues/650
+* resource for learning more http://visionmedia.github.io/nib/
+* Mixin examples: 
+		* Gradients: background: linear-gradient(top, white, black);
+		* Positions: fixed: bottom right;
+		* Border-Radius: border-radius: 1px 2px / 3px 4px;
+			* border-radius: border-radius: bottom 10px; ??
+		*
+* Font Face: 
+	* http://learnboost.github.io/stylus/docs/font-face.html
+*/
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+// mixin help
+@import 'vendor/nib'
+
+html
+	body
+		margin 20px
+
+.circle
+	background blue
+	height 20px
+	width 20px
+	border-radius 20px
