@@ -22,12 +22,101 @@
 // mixin help
 @import 'vendor/nib'
 
+//- ------------------------------
+//- Global color variables
+//- ------------------------------
+// maybe an accent color F26101 orange
+brandcolor = #57bcdb
+// accentcolor =
+// bgcolor =
+//- ------------------------------
+
+//- ------------------------------
+//- Mixins
+//- ------------------------------
+form-unit()
+	padding 0px
+	padding-left 10px
+	height 40px
+	border-radius 4px
+	border none
+	background #efefef
+	margin 10px 0px
+	font-size 18px
+
+cta()
+	background 
+
+label-link()
+	color brandcolor
+	&:hover
+		color lighten(brandcolor, 10)
+		text-decoration none
+
+//- ------------------------------
+
+
+//- ------------------------------
+//- Global styling
+//- ------------------------------
 html
 	body
-		margin 20px
+		font-family: 'Open Sans', sans-serif;	
+		// background lighten(#57bcdb, 25) // light light blue, not really good
+		// background #D9E8F5 // light grey too blue
+		// background #D9E8F5 // light grey
+		background #ffffff // straight white
+		// background #D9E8F5 // light grey
 
-.circle
-	background blue
-	height 20px
-	width 20px
-	border-radius 20px
+.container 
+	margin 0 auto
+	max-width	960px
+
+.undernav
+	margin-top 50px
+
+a 
+	&:hover
+		cursor pointer
+//- ------------------------------
+
+//- ------------------------------
+//- Login and Register Container Styling
+//- ------------------------------
+.authentication-container
+	padding 0px 15px
+	text-align center
+	
+	.profile-circle		
+		background brandcolor
+		margin 50px auto 35px
+		display inline-block
+		height 150px
+		width 150px
+		border-radius 75px
+		border 2px solid #fff		
+		position relative
+		i
+			color #fff
+			position relative
+			font-size 8em
+			top	10%
+	label
+		padding 0px
+		margin 0px		
+		font-size 14px
+		a
+			label-link()
+	input
+		form-unit()
+		display inline-block
+	button	
+		form-unit()
+		color #ffffff
+		background brandcolor
+		border 2px solid brandcolor
+		&:hover
+			color brandcolor
+			background #fff
+			border none
+//- ------------------------------

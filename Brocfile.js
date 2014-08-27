@@ -5,6 +5,9 @@ var mergeTrees = require('broccoli-merge-trees');
 var pickFiles = require('broccoli-static-compiler');
 var app = new EmberApp();
 
+app.import('vendor/firebase-simple-login/firebase-simple-login.js');
+app.import('vendor/bootstrap/dist/js/bootstrap.js');
+app.import('vendor/bootstrap/dist/css/bootstrap.css');
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //

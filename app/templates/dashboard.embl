@@ -1,0 +1,7 @@
+.col-xs-12 My Health
+.col-xs-3
+	button{action "logout"} logout
+	== outlet
+
+.col-xs-9
+	== outlet
