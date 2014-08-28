@@ -1,0 +1,8 @@
+h1 Hello from the single message TEMPLATE
+
+
+h1 = title
+h3 = body
+h5 = timestamp
+
+/ will need to put an == outlet here eventually for the reply/share/attach routes

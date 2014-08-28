@@ -1,6 +1,6 @@
 .container
 	.col-xs-12.authentication-container
-		form submit="userLogin"
+		form submit="userLogin"		
 			.profile-circle
 				i.fa.fa-user.fa-5x
 			label.col-xs-12 Please Enter Your Password To Login
@@ -9,5 +9,4 @@
 			button.form-control.btn type="submit" Sign In			
 			label.col-xs-12 Forgot Password? 
 			/ need to make sure to link Forget Password to a model or something
-			/ submit="userLogin"
-== outlet			
+== outlet

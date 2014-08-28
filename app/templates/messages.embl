@@ -1,9 +1,10 @@
-h1 Hello from Messages
+h1 Outlet is above me
 ul
 	each message in arrangedContent
-		link-to "message" message .subject
-		li
-			= message.title
+		li			
+			link-to "message" message
+				/ the above line creates a nest link route to dashboard/messages/message/:message_id (the second message is the actuall model that is getting passed through)
+				= message.title
 			br
 			= message.body
-		
+

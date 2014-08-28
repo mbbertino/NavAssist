@@ -8,6 +8,7 @@ export default Ember.Controller.extend({
       } else if (user) {
       	// if there is a user then set the current user on the global auth route
         this.set('currentUser', user);
+        console.log(user)
         this.transitionToRoute('dashboard');
       }
     }.bind(this));
