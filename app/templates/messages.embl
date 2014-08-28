@@ -1,7 +1,6 @@
-h1 Outlet is above me
-ul
+ul.timeline
 	each message in arrangedContent
-		li			
+		li.timeline-item
 			link-to "message" message
 				/ the above line creates a nest link route to dashboard/messages/message/:message_id (the second message is the actuall model that is getting passed through)
 				= message.title

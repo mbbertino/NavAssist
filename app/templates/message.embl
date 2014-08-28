@@ -1,6 +1,3 @@
-h1 Hello from the single message TEMPLATE
-
-
 h1 = title
 h3 = body
 h5 = timestamp

@@ -55,6 +55,21 @@ label-link()
 
 //- ------------------------------
 
+//- ------------------------------
+//- mobile/small tablets break
+//- ------------------------------
+@media screen and (max-width: 768px)
+	.container
+		padding 0 0
+	body
+		padding 50px 0 0 0
+	.navmenu
+		padding 50px 0 0 0
+//- --------------------------------
+
+@media screen and (min-width: 768px)
+	body
+		padding 0 0 0 300px
 
 //- ------------------------------
 //- Global styling
@@ -68,6 +83,7 @@ html
 		background #ffffff // straight white
 		// background #D9E8F5 // light grey
 
+
 .container 
 	margin 0 auto
 	max-width	960px
@@ -78,6 +94,45 @@ html
 a 
 	&:hover
 		cursor pointer
+//- ------------------------------
+.navmenu
+.navbar
+	background brandcolor
+
+.navbar-inverse .navbar-brand
+.navmenu-inverse .navmenu-brand
+.navmenu-inverse .navmenu-nav>li>a
+	color #fff
+
+.navbar
+	text-align center
+	display block
+
+	.navbar-toggle
+		margin-left 15px
+		position absolute
+		// float left
+		left 0px
+		border none
+		&:hover
+			background #fff
+		.icon-bar
+			&:hover
+				color brandcolor
+
+	.navbar-brand
+		float none
+		display inline-block
+
+
+//- ------------------------------
+//- Timeline Styling
+//- ------------------------------
+.timeline
+	padding 0px
+	list-style none
+	.timeline-item
+		border-bottom 1px solid brandcolor
 //- ------------------------------
 
 //- ------------------------------

@@ -8,6 +8,8 @@ var app = new EmberApp();
 app.import('vendor/firebase-simple-login/firebase-simple-login.js');
 app.import('vendor/bootstrap/dist/js/bootstrap.js');
 app.import('vendor/bootstrap/dist/css/bootstrap.css');
+app.import('vendor/jasny-bootstrap/dist/css/jasny-bootstrap.min.css');
+app.import('vendor/jasny-bootstrap/dist/js/jasny-bootstrap.min.js');
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //

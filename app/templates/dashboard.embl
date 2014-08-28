@@ -1,6 +1,31 @@
-.col-xs-12 My Health
-.col-xs-3
-	button{action "logout"} logout
+/ .col-xs-12 My Health
+/ .col-xs-3
+/ 	nav.navmenu.navmeny-default.navmenu-fixed-left.offcanvas-sm role="navigation" style="height: 100%;"
+/ 		button{action "logout"} logout
+/ 		ul
 
-.col-xs-9
+
+.navmenu.navmenu-inverse.navmenu-fixed-left.offcanvas-xs
+	a.navmenu-brand.visible-sm.visible-md.visible-lg My Health
+	ul.nav.navmenu-nav
+		li
+			link-to "messages" | Messages
+		li
+			link-to "unread" | Unread Messages
+		li
+			link-to "events" | Events
+		li
+			link-to "careteam" | Care Team
+		li
+			link-to "profile" | My Profile	
+
+.navbar.navbar-inverse.navbar-fixed-top.hidden-md.hidden-lg.hidden-sm
+	button.navbar-toggle data-toggle="offcanvas" data-target=".navmenu"
+		span.icon-bar
+		span.icon-bar
+		span.icon-bar
+	a.navbar-brand My Health
+
+
+.container
 	== outlet
