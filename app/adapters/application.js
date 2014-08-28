@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
-export default DS.RESTAdapter.extend({
+export default DS.FirebaseAdapter.extend({
 	firebase: new window.Firebase('https://glaring-fire-229.firebaseio.com')
 });

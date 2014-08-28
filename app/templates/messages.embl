@@ -1,0 +1,9 @@
+h1 Hello from Messages
+ul
+	each message in arrangedContent
+		link-to "message" message .subject
+		li
+			= message.title
+			br
+			= message.body
+		

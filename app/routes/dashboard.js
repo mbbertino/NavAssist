@@ -6,7 +6,7 @@ export default Ember.Route.extend({
 	// Then think about automatically moving 
 	// think rsvp for multiple data models
 	// http://discuss.emberjs.com/t/dashboard-type-views/5187/2
-	model: function(params) {
-    return this.store.find('user', params.userID);
-  }
+	// model: function() {
+	//    return this.store.find('user');
+	// }
 });

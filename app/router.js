@@ -14,7 +14,7 @@ Router.map(function() {
 		  this.route('forgetpassword', {path: '/forgotpassword'});	  
 	  });
   	// Dashboard for Patient ||| will need another section for the admin
-	  this.resource('dashboard',{path: 'dashboard/:user_id'}, function(){
+	  this.resource('dashboard',{path: 'dashboard'}, function(){
 		  // This will be where a user can edit their profile info
 		  this.resource('profile');
 		  // This will allow a user to send a message First path allow picking recipients from the care team
