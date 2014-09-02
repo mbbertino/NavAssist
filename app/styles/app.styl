@@ -61,14 +61,14 @@ label-link()
 @media screen and (max-width: 768px)
 	.container
 		padding 0 0
-	body
+	.dashboard-padding
 		padding 50px 0 0 0
 	.navmenu
 		padding 50px 0 0 0
 //- --------------------------------
 
 @media screen and (min-width: 768px)
-	body
+	.dashboard-padding
 		padding 0 0 0 300px
 
 //- ------------------------------
@@ -98,11 +98,50 @@ a
 .navmenu
 .navbar
 	background brandcolor
+	border none
 
-.navbar-inverse .navbar-brand
-.navmenu-inverse .navmenu-brand
-.navmenu-inverse .navmenu-nav>li>a
-	color #fff
+.navmenu-brand
+.navbar-brand
+	font-size 22px;
+	
+.navmenu
+	text-align center
+
+	.navmenu-brand
+		margin-top 0px
+		border-bottom 1px solid #fff
+
+	.profile-circle		
+		background brandcolor
+		margin 25px auto 25px
+		display inline-block
+		height 150px
+		width 150px
+		border-radius 75px
+		border 2px solid #fff		
+		position relative
+		i
+			color #fff
+			position relative
+			font-size 8em
+			top	10%
+	a
+		color #fff
+
+	ul
+		li
+			font-size 16px
+			a
+				&:hover
+					color brandcolor
+					background #fff
+
+	button
+		form-unit()
+		padding 0px 15px
+		border-radius 0px
+		background #fff
+		color brandcolor
 
 .navbar
 	text-align center
@@ -111,18 +150,23 @@ a
 	.navbar-toggle
 		margin-left 15px
 		position absolute
-		// float left
 		left 0px
 		border none
+
 		&:hover
 			background #fff
-		.icon-bar
-			&:hover
-				color brandcolor
+			.icon-bar
+				background brandcolor
+		&:focus
+			background #fff
+			.icon-bar
+				background brandcolor
+
 
 	.navbar-brand
 		float none
 		display inline-block
+		color #fff
 
 
 //- ------------------------------

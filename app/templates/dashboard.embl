@@ -5,8 +5,12 @@
 / 		ul
 
 
-.navmenu.navmenu-inverse.navmenu-fixed-left.offcanvas-xs
+.navmenu.navmenu-fixed-left.offcanvas-xs
 	a.navmenu-brand.visible-sm.visible-md.visible-lg My Health
+	/ a.current-user
+	/ 	= currentUser.email
+	.profile-circle
+		i.fa.fa-user.fa-5x
 	ul.nav.navmenu-nav
 		li
 			link-to "messages" | Messages
@@ -17,7 +21,8 @@
 		li
 			link-to "careteam" | Care Team
 		li
-			link-to "profile" | My Profile	
+			link-to "profile" | My Profile
+	button.btn{action "logout"} Logout
 
 .navbar.navbar-inverse.navbar-fixed-top.hidden-md.hidden-lg.hidden-sm
 	button.navbar-toggle data-toggle="offcanvas" data-target=".navmenu"

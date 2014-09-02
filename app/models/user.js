@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   email: DS.attr('string'),
-  userID: DS.attr('string'),
-  dateJoined: DS.attr('number')
+	provider: DS.attr('string'),
+  provider_id: DS.attr('string'),
+  createdTimeStamp: DS.attr('number')
 });

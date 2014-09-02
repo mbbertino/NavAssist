@@ -1,0 +1,9 @@
+
+= input .form-control 							value=firstName placeholder="FirstName"	
+= input .form-control 							value=lastName placeholder="LastName"	
+= input .form-control type="file"   value=profilePhoto placeholder="Photo"
+= input .form-control 							value=phone placeholder="Phone"	
+= input .form-control type="email"  value=email placeholder="Email"	
+
+
+

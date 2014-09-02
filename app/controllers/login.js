@@ -6,16 +6,21 @@ export default Ember.Controller.extend({
       if (error) {
         alert('Authentication failed: ' + error);
       } else if (user) {
-      	// if there is a user then set the current user on the global auth route
-        this.set('currentUser', user);
-        console.log(user)
-        this.transitionToRoute('dashboard');
+      	// var myRef = new window.Firebase("https://glaring-fire-229.firebaseio.com")
+		     //  myRef.child('users').child(user.id).set({
+		     //    email: user.email,
+		     //    provider: user.provider,
+		     //    provider_id: user.id,
+		     //  	createdTimeStamp: new Date().getTime(),
+		     //  	user: user
+		     //  })
+	      this.transitionToRoute('/dashboard/'+ user.id)
       }
     }.bind(this));
 	},
 
 	actions: {
-    userLogin: function(email, password) {    	   
+    userLogin: function(email, password) {
     	this.authClient.login('password', {
 			  email: email || this.email,
 			  password: password || this.password
@@ -33,6 +38,16 @@ export default Ember.Controller.extend({
     //      dateJoined: new Date()
     //    }).save();          
     //  },
+
+    		// This needs to be moved to the create user with the Navigator Admin
+					// var myRef = new window.Firebase("https://glaring-fire-229.firebaseio.com")
+		      // myRef.child('users').child(user.id).set({
+		      //   email: user.email,
+		      //   provider: user.provider,
+		      //   provider_id: user.id,
+		      // 	createdTimeStamp: new Date().getTime(),
+		      // 	user: user
+		      // })
 
     //  createUser: function(email, password){
     //  	var that = this		  
