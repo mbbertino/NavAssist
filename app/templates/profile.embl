@@ -1,9 +1,45 @@
-
 = input .form-control 							value=firstName placeholder="FirstName"	
 = input .form-control 							value=lastName placeholder="LastName"	
-= input .form-control type="file"   value=profilePhoto placeholder="Photo"
+
 = input .form-control 							value=phone placeholder="Phone"	
 = input .form-control type="email"  value=email placeholder="Email"	
+.fileinput.fileinput-new data-provides="fileinput"
+		.fileinput-new.thumbnail style="width: 200px; height: 150px;"
+			img src="http://placehold.it/200x150" alt="..."
+		.fileinput-preview.fileinput-exists.thumbnail style="max-width: 200px; max-height: 150px;"  
+		div
+			span.btn.btn-default.btn-file
+				span.fileinput-new Select File
+				span.fileinput-exists Change
+				= input type="file" value=profilePhoto placeholder="Photo"
+			a.btn.btn-default.fileinput-exists data-dismiss="fileinput" Remove
 
+/ Just the file upload
+/ ======================
+/ http://jasny.github.io/bootstrap/javascript/#fileinput
+/ ======================
+	.fileinput.fileinput-new.input-group data-provides="fileinput"
+		.form-control data-trigger="fileinput"
+			i.fileinput-exists
+			span.fileinput-filename
+		span.input-group-addon.btn.btn-default.btn-file
+			span.fileinput-new Select File
+			span.fileinput-exists Change
+			= input type="file" value=profilePhoto placeholder="Photo"
 
+		a.input-group-addon.btn.btn-default.fileinput-exists data-dismiss="fileinput" Remove
 
+/ if I want to have a thumbnail of the file input
+/ <div class="fileinput fileinput-new" data-provides="fileinput">
+/   <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+/     <img data-src="holder.js/100%x100%" alt="...">
+/   </div>
+/   <div>
+/     <span class="btn btn-default btn-file">
+/     	<span class="fileinput-new">Select image</span>
+/     	<span class="fileinput-exists">Change</span>
+/     	<input type="file" name="...">
+/   	</span>
+/     <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+/   </div>
+/ </div>

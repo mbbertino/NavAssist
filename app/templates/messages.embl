@@ -1,9 +1,15 @@
 ul.timeline
 	each message in arrangedContent
 		li.timeline-item
+			if message.isEvent
+				i.fa.fa-calendar-o.fa-2x			
+			else
+				i.fa.fa-comment-o.fa-2x
 			link-to "message" message
 				/ the above line creates a nest link route to dashboard/messages/message/:message_id (the second message is the actuall model that is getting passed through)
 				= message.title
 			br
 			= message.body
+			/ button.btn{action "deleteMessage" message} Delete Message
+			
 
